@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.keyboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 350px;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 0.1rem solid #ffffff73;
+    backdrop-filter: blur(10px);
+}
+
+.keyboard-container .keys {
+    margin-bottom: 10px;
+    display: flex;
+    /* background: red; */
+    justify-content: center;
+}
+
+.btn,
+.btns {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 900;
+    background: #dde1e7;
+    color: #000;
+    border: 0.1rem solid #edeef0;
+    box-shadow: -3px -3px 7px #c4c4c46c,
+        3px 3px 7px #6161616c;
+}
+
+.space {
+    width: 280px;
+}
+
+input:focus {
+    border: 1px solid #dde1e7;
+    box-shadow: inset -3px -3px 7px #a8a8a870,
+        inset 3px 3px 7px #9e9e9e6c;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.center {
+    width: 50px;
+}
+
+.toggle {
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.del {
+    font-size: 1.3rem;
+    color: black;
+}
+
+#toggle {
+    display: none;
+}
+
+#textarea {
+    width: 590px;
+    height: 120px;
+    padding: 20px;
+    overflow-y: scroll;
+    background: #dde1e7;
+    color: #000000;
+    border: 0.1rem solid #edeef0;
+    box-shadow: -3px -3px 7px #c4c4c46c,
+        3px 3px 7px #6161616c;
+    margin-bottom: 10px;
+    resize: none;
+    border-radius: 5px;
+    scrollbar-width: none;
+}
+
+#textarea::-webkit-scrollbar {
+    display: none;
+}
+
